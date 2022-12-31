@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Domasna 4</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+         $(document).ready(function(){
+            $("h1").css("background-color", "grey");
+          });
+
+          $(document).ready(function(){
+            $("h1").css("color", "white");
+          });
+        $(document).ready(function(){
+        $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+        });
+    </script>
+    <style>
+        table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Best countries to live in</h1>
+    <p>Search your favorite country to see if its in the top 20 countries to live in.</p>  
+    <input id="myInput" type="text" placeholder="Search..">
+    <br><br>
+
+    <table>
+    <thead>
+    <tr>
+        <th>Firstname</th>
+       
+    </tr>
+    </thead>
+    <tbody id="myTable">
+    <tr>
+        <td>1.Sweden</td>
+    </tr>
+    <tr>
+        <td>2.Denmark</td>
+    </tr>
+    <tr>
+        <td>3.Canada</td>
+    </tr>
+    <tr>
+        <td>4.Switzerland</td>
+    </tr>
+    <tr>
+        <td>5.Norway</td>
+    </tr>
+    <tr>
+        <td>6.Finland</td>
+    </tr>
+    <tr>
+        <td>7.Germany</td>
+    </tr>
+    <tr>
+        <td>8.Netherlands</td>
+    </tr>
+    <tr>
+        <td>9.Australia</td>
+    </tr>
+    <tr>
+        <td>10.New Zealand</td>
+    </tr>
+    <tr>
+        <td>11.Belgium</td>
+    </tr>
+    <tr>
+        <td>12.United Kingdom</td>
+    </tr>
+    <tr>
+        <td>13.Austria</td>
+    </tr>
+    <tr>
+        <td>14.Japan</td>
+    </tr>
+    <tr>
+        <td>15.France</td>
+    </tr>
+    <tr>
+        <td>16.Ireland</td>
+    </tr>
+    <tr>
+        <td>17.Luxebourg</td>
+    </tr>
+    <tr>
+        <td>18.Spain</td>
+    </tr>
+    <tr>
+        <td>19.Italy</td>
+    </tr>
+    <tr>
+        <td>20.Portugal</td>
+    </tr>
+   
+    </tbody>
+    </table>
+    
+    
+
+</body>
+</html>
